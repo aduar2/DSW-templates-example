@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   <title>{% block title %}{% endblock %} - My Webpage</title>
   
-  </head>
+  </head>,
   <body>
      <!--nav bar-->
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
@@ -35,10 +35,10 @@
           <li {% if active_page == "home" %} class="nav-item active"{% else %}class="nav-item"{% endif %}>
             <a class="nav-link" href="/">Home</a>
           </li>
-          <li {% if active_page == "home" %} class="nav-item active"{% else %}class="nav-item"{% endif %}>m">
+          <li {% if active_page == "page1" %} class="nav-item active"{% else %}class="nav-item"{% endif %}>
             <a class="nav-link" href="/p1">Page 1</a>
           </li>
-          <li {% if active_page == "home" %} class="nav-item active"{% else %}class="nav-item"{% endif %}>
+          <li {% if active_page == "page2" %} class="nav-item active"{% else %}class="nav-item"{% endif %}>
             <a class="nav-link" href="/p2">Page 2</a>
           </li>    
         </ul>
